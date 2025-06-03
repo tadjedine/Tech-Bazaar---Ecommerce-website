@@ -1,0 +1,232 @@
+/* Modern Style for E-commerce Site - Tadjedine */
+:root {
+  --primary-color: #6200ea;
+  --secondary-color: #03dac6;
+  --dark-color: #3700b3;
+  --light-color: #f6f8ff;
+  --accent-color: #ff6d00;
+  --error-color: #b00020;
+  --success-color: #00c853;
+  --text-primary: #333333;
+  --text-secondary: #757575;
+  --card-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--light-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navblack {
+  background-color: white !important;
+  box-shadow: var(--card-shadow);
+}
+
+.nav-wrapper {
+  background-color: white;
+}
+
+.dark-text {
+  color: var(--text-primary) !important;
+}
+
+.brand {
+  padding-left: 20px;
+}
+
+.button-rounded {
+  border-radius: 30px;
+  padding: 0 25px;
+  text-transform: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all var(--transition-speed) ease;
+}
+
+/* Buttons */
+.btn, .btn-large {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  text-transform: none;
+  font-weight: 500;
+  transition: all var(--transition-speed) ease;
+}
+
+.btn:hover, .btn-large:hover {
+  background-color: var(--dark-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-floating {
+  background-color: var(--primary-color);
+}
+
+.btn-floating:hover {
+  background-color: var(--dark-color);
+}
+
+/* Cards */
+.card {
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: all var(--transition-speed) ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card .card-image {
+  position: relative;
+}
+
+.card .card-image .card-title {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--primary-color);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  bottom: 10px;
+  left: 10px;
+}
+
+.card .card-content {
+  padding: 20px;
+}
+
+.card .card-action {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 15px 20px;
+}
+
+/* Product Page */
+.product-page {
+  background-color: #f6f8ff;
+  padding: 30px 0;
+}
+
+.current-page {
+  margin-bottom: 30px;
+}
+
+.breadcrumb {
+  color: var(--text-secondary);
+}
+
+.breadcrumb:hover {
+  color: var(--primary-color);
+}
+
+.breadcrumb:before {
+  color: var(--text-secondary);
+}
+
+/* Forms */
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+  border-bottom: 1px solid #e0e0e0;
+  transition: all var(--transition-speed) ease;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 2px solid var(--primary-color);
+  box-shadow: none;
+}
+
+.input-field .prefix.active {
+  color: var(--primary-color);
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: var(--primary-color);
+}
+
+/* Footer */
+.page-footer {
+  background-color: #212121;
+  padding-top: 40px;
+}
+
+.footer-copyright {
+  background-color: #1a1a1a;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px 0;
+}
+
+.footer h5 {
+  color: var(--primary-color);
+}
+
+/* Animations */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}
+
+/* WOW animations */
+.wow {
+  visibility: hidden;
+}
+
+/* Tables */
+table.highlight > tbody > tr:hover {
+  background-color: rgba(98, 0, 234, 0.05);
+}
+
+/* Cookie Consent */
+#cookie-consent {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  margin: 20px;
+  width: calc(100% - 40px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+} 
